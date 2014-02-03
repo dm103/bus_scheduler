@@ -4,8 +4,13 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'rspec-rails'
+gem 'guard-rspec', '2.5.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby'
+gem 'capybara'
+gem 'spork-rails', '4.0.0'
+gem 'guard-spork', '1.5.0'
+gem 'childprocess', '0.3.6'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 
@@ -34,6 +39,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
