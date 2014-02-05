@@ -11,7 +11,7 @@ class UsersController < ApplicationController
      @user = User.new(user_params)
     if @user.save
       # Handle a successful save.
-      flash[:success] = "Welcome to the Bus Scheduler!"
+      flash[:success] = "Welcome to the Bus Scheduler!...Your Account is Created...!"
       redirect_to @user
     else
       render 'new'
